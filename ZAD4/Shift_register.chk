@@ -1,0 +1,111 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(3/56), Fanin(4/38), Clk(0/3), Bct(1/4), Pin(0/6), Mcell(2/16)
+PLApts[3/56] () () () () 0 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 3 () () 4
+Fanins[ 4] mem_val<0>.n mem_val<1>.n clock.p functional.p
+clk[0] 
+CTC: (pt=0) clock ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [mem_val<2>(160)] [mem_val<1>(159)] 
+Signal[ 2] [ 0:  ][ 1:  ][ 2: (143)  ][ 3: (142)  ][ 4:  ][ 5: (140)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: (139)  ][ 12: (138)  ][ 13: (137)  ][ 14: mem_val<1>(159)  ][ 15: mem_val<2>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [wejscie(2)] 
+Signal[ 1] [ 0: wejscie(2)  ][ 1:  ][ 2: (3)  ][ 3: (4)  ][ 4: (5)  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11: (6)  ][ 12: (7)  ][ 13: (9)  ][ 14: (10)  ][ 15:  ]
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [clock(39)] 
+Signal[ 1] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: (38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: clock(39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+PLApt(10/56), Fanin(10/38), Clk(0/3), Bct(1/4), Pin(4/8), Mcell(4/16)
+PLApts[10/10] 2 19 20 17 0 18 15 16 13 14
+Fanins[10] wyjscie<0>.n wyjscie<1>.n wyjscie<2>.n wyjscie<3>.n mem_val<0>.n mem_val<1>.n mem_val<2>.n clock.p functional.p wejscie.p
+clk[0] 
+CTC: (pt=0) clock ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [wyjscie<0>(287),wyjscie<0>(119)] [wyjscie<1>(285),wyjscie<1>(117)]  
+           [wyjscie<2>(278),wyjscie<2>(115)] [wyjscie<3>(274),wyjscie<3>(113)] 
+Signal[ 4] [ 0: (112)  ][ 1: wyjscie<3>(274) wyjscie<3>(113)  ][ 2:  ][ 3: (114)  ][ 4:  ][ 5:  
+           wyjscie<2>(278) wyjscie<2>(115)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: (116)  ][ 12:  
+           wyjscie<1>(285) wyjscie<1>(117)  ][ 13: (118)  ][ 14: wyjscie<0>(287) wyjscie<0>(119)  ][ 15:  ]
+----------------- B l o c k 9 ------------------
+PLApt(6/56), Fanin(8/38), Clk(0/3), Bct(1/4), Pin(2/9), Mcell(2/16)
+PLApts[6/6] 2 11 12 9 0 10
+Fanins[ 8] wyjscie<4>.n wyjscie<5>.n mem_val<0>.n mem_val<1>.n mem_val<2>.n clock.p functional.p wejscie.p
+clk[0] 
+CTC: (pt=0) clock ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [wyjscie<4>(294),wyjscie<4>(104)] [wyjscie<5>(302),wyjscie<5>(102)] 
+Signal[ 2] [ 0: (111)  ][ 1: (110)  ][ 2: (107)  ][ 3: (106)  ][ 4: (105)  ][ 5: wyjscie<4>(294)  
+           wyjscie<4>(104)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: (103)  ][ 12:  ][ 13: wyjscie<5>(302)  
+           wyjscie<5>(102)  ][ 14:  ][ 15: (101)  ]
+----------------- B l o c k 10 ------------------
+PLApt(1/56), Fanin(1/38), Clk(0/3), Bct(1/4), Pin(1/8), Mcell(1/16)
+PLApts[1/5] () () () () 0
+Fanins[ 1] clock.p
+clk[0] 
+CTC: (pt=0) clock ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [mem_val<0>,functional(124)] 
+Signal[ 2] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           mem_val<0>(315) functional(124)  ][ 11: (125)  ][ 12: (126)  ][ 13: (128)  ][ 14: (129)  ][ 15:  
+           (130)  ]
+----------------- B l o c k 11 ------------------
+PLApt(6/56), Fanin(8/38), Clk(0/3), Bct(1/4), Pin(2/6), Mcell(2/16)
+PLApts[6/6] 2 7 8 5 0 6
+Fanins[ 8] wyjscie<6>.n wyjscie<7>.n mem_val<0>.n mem_val<1>.n mem_val<2>.n clock.p functional.p wejscie.p
+clk[0] 
+CTC: (pt=0) clock ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [wyjscie<6>(322),wyjscie<6>(100)] [wyjscie<7>(332),wyjscie<7>(97)] 
+Signal[ 2] [ 0:  ][ 1: wyjscie<6>(322) wyjscie<6>(100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ] 
+           [ 9:  ][ 10: (98)  ][ 11: wyjscie<7>(332) wyjscie<7>(97)  ][ 12: (96)  ][ 13: (95)  ][ 14: (94)  ] 
+           [ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

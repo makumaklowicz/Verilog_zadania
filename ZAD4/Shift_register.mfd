@@ -1,0 +1,166 @@
+MDF Database:  version 1.0
+MDF_INFO | Shift_register | XC2C256-6-TQ144
+MACROCELL | 8 | 14 | wyjscie<0>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 8 | 14
+INPUTS | 6 | functional  | wejscie  | wyjscie<0>  | mem_val<0>  | mem_val<1>  | mem_val<2>
+INPUTMC | 4 | 8 | 14 | 10 | 10 | 0 | 14 | 0 | 15
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<0>.T := !functional
+	# wejscie & !wyjscie<0> & !mem_val<0> & !mem_val<1> & 
+	!mem_val<2>
+	# !wejscie & wyjscie<0> & !mem_val<0> & !mem_val<1> & 
+	!mem_val<2>;	// (3 pt, 6 inp)
+    wyjscie<0>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 10 | 10 | mem_val<0>_MC
+ATTRIBUTES | 2285895680 | 4
+OUTPUTMC | 10 | 0 | 14 | 0 | 15 | 8 | 14 | 8 | 12 | 8 | 5 | 8 | 1 | 9 | 5 | 9 | 13 | 11 | 1 | 11 | 11
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+mem_val<0>.T := functional;	// (0 pt, 0 inp)
+    mem_val<0>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 14 | mem_val<1>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 9 | 0 | 15 | 8 | 14 | 8 | 12 | 8 | 5 | 8 | 1 | 9 | 5 | 9 | 13 | 11 | 1 | 11 | 11
+INPUTS | 2 | functional  | mem_val<0>
+INPUTMC | 1 | 10 | 10
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   mem_val<1>.T := functional & mem_val<0>;	// (1 pt, 2 inp)
+    mem_val<1>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 15 | mem_val<2>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 8 | 8 | 14 | 8 | 12 | 8 | 5 | 8 | 1 | 9 | 5 | 9 | 13 | 11 | 1 | 11 | 11
+INPUTS | 3 | functional  | mem_val<0>  | mem_val<1>
+INPUTMC | 2 | 10 | 10 | 0 | 14
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   mem_val<2>.T := functional & mem_val<0> & mem_val<1>;	// (1 pt, 3 inp)
+    mem_val<2>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 12 | wyjscie<1>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 8 | 12
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<1>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 8 | 12
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<1>.T := !functional
+	# wejscie & mem_val<0> & !mem_val<1> & !mem_val<2> & 
+	!wyjscie<1>
+	# !wejscie & mem_val<0> & !mem_val<1> & !mem_val<2> & 
+	wyjscie<1>;	// (3 pt, 6 inp)
+    wyjscie<1>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 5 | wyjscie<2>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 8 | 5
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<2>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 8 | 5
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<2>.T := !functional
+	# wejscie & !mem_val<0> & mem_val<1> & !mem_val<2> & 
+	!wyjscie<2>
+	# !wejscie & !mem_val<0> & mem_val<1> & !mem_val<2> & 
+	wyjscie<2>;	// (3 pt, 6 inp)
+    wyjscie<2>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 1 | wyjscie<3>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<3>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 8 | 1
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<3>.T := !functional
+	# wejscie & mem_val<0> & mem_val<1> & !mem_val<2> & 
+	!wyjscie<3>
+	# !wejscie & mem_val<0> & mem_val<1> & !mem_val<2> & 
+	wyjscie<3>;	// (3 pt, 6 inp)
+    wyjscie<3>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 5 | wyjscie<4>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 9 | 5
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<4>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 9 | 5
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<4>.T := !functional
+	# wejscie & !mem_val<0> & !mem_val<1> & mem_val<2> & 
+	!wyjscie<4>
+	# !wejscie & !mem_val<0> & !mem_val<1> & mem_val<2> & 
+	wyjscie<4>;	// (3 pt, 6 inp)
+    wyjscie<4>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 13 | wyjscie<5>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 9 | 13
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<5>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 9 | 13
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<5>.T := !functional
+	# wejscie & mem_val<0> & !mem_val<1> & mem_val<2> & 
+	!wyjscie<5>
+	# !wejscie & mem_val<0> & !mem_val<1> & mem_val<2> & 
+	wyjscie<5>;	// (3 pt, 6 inp)
+    wyjscie<5>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 1 | wyjscie<6>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 11 | 1
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<6>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 11 | 1
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<6>.T := !functional
+	# wejscie & !mem_val<0> & mem_val<1> & mem_val<2> & 
+	!wyjscie<6>
+	# !wejscie & !mem_val<0> & mem_val<1> & mem_val<2> & 
+	wyjscie<6>;	// (3 pt, 6 inp)
+    wyjscie<6>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 11 | wyjscie<7>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 1 | 11 | 11
+INPUTS | 6 | functional  | wejscie  | mem_val<0>  | mem_val<1>  | mem_val<2>  | wyjscie<7>
+INPUTMC | 4 | 10 | 10 | 0 | 14 | 0 | 15 | 11 | 11
+INPUTP | 2 | 190 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   wyjscie<7>.T := !functional
+	# wejscie & mem_val<0> & mem_val<1> & mem_val<2> & 
+	!wyjscie<7>
+	# !wejscie & mem_val<0> & mem_val<1> & mem_val<2> & 
+	wyjscie<7>;	// (3 pt, 6 inp)
+    wyjscie<7>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+PIN | clock | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | wejscie | 64 | 16 | LVCMOS18 | 1 | 8 | 8 | 14 | 8 | 12 | 8 | 5 | 8 | 1 | 9 | 5 | 9 | 13 | 11 | 1 | 11 | 11
+PIN | functional | 64 | 16 | LVCMOS18 | 190 | 11 | 0 | 14 | 0 | 15 | 8 | 14 | 8 | 12 | 8 | 5 | 8 | 1 | 9 | 5 | 9 | 13 | 11 | 1 | 11 | 11 | 10 | 10
+PIN | wyjscie<0> | 536871040 | 0 | LVCMOS18 | 178
+PIN | wyjscie<1> | 536871040 | 0 | LVCMOS18 | 176
+PIN | wyjscie<2> | 536871040 | 0 | LVCMOS18 | 173
+PIN | wyjscie<3> | 536871040 | 0 | LVCMOS18 | 169
+PIN | wyjscie<4> | 536871040 | 0 | LVCMOS18 | 160
+PIN | wyjscie<5> | 536871040 | 0 | LVCMOS18 | 156
+PIN | wyjscie<6> | 536871040 | 0 | LVCMOS18 | 152
+PIN | wyjscie<7> | 536871040 | 0 | LVCMOS18 | 145

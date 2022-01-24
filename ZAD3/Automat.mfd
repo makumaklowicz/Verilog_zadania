@@ -1,0 +1,64 @@
+MDF Database:  version 1.0
+MDF_INFO | Automat | XC2C256-6-TQ144
+MACROCELL | 8 | 1 | wyjscie_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | current_value_FSM_FFd2  | current_value_FSM_FFd1
+INPUTMC | 2 | 0 | 10 | 0 | 15
+EQ | 1 | 
+   wyjscie = current_value_FSM_FFd2 & current_value_FSM_FFd1;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 10 | current_value_FSM_FFd2_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 8 | 1
+INPUTS | 4 | current_value_FSM_FFd2  | value  | current_value_FSM_FFd3  | current_value_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   current_value_FSM_FFd2 := !current_value_FSM_FFd2 & value & 
+	current_value_FSM_FFd3
+	# value & current_value_FSM_FFd3 & 
+	current_value_FSM_FFd1
+	# current_value_FSM_FFd2 & !value & 
+	!current_value_FSM_FFd3 & !current_value_FSM_FFd1
+	# !current_value_FSM_FFd2 & !value & 
+	!current_value_FSM_FFd3 & current_value_FSM_FFd1;	// (4 pt, 4 inp)
+    current_value_FSM_FFd2.CLK = clock;	// CTC	(1 pt, 1 inp)
+   current_value_FSM_FFd2.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 14 | current_value_FSM_FFd3_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 10
+INPUTS | 4 | value  | current_value_FSM_FFd2  | current_value_FSM_FFd3  | current_value_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   current_value_FSM_FFd3 := !value
+	# !current_value_FSM_FFd2 & !current_value_FSM_FFd3 & 
+	current_value_FSM_FFd1;	// (2 pt, 4 inp)
+    current_value_FSM_FFd3.CLK = clock;	// CTC	(1 pt, 1 inp)
+   current_value_FSM_FFd3.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 15 | current_value_FSM_FFd1_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 8 | 1
+INPUTS | 4 | current_value_FSM_FFd2  | value  | current_value_FSM_FFd3  | current_value_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   current_value_FSM_FFd1 := current_value_FSM_FFd2 & value & 
+	current_value_FSM_FFd3
+	# !current_value_FSM_FFd2 & value & 
+	current_value_FSM_FFd1;	// (2 pt, 4 inp)
+    current_value_FSM_FFd1.CLK = clock;	// CTC	(1 pt, 1 inp)
+   current_value_FSM_FFd1.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+PIN | clock | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | reset | 65536 | 16 | LVCMOS18 | 218 | 3 | 0 | 15 | 0 | 14 | 0 | 10
+PIN | value | 64 | 16 | LVCMOS18 | 190 | 3 | 0 | 15 | 0 | 14 | 0 | 10
+PIN | wyjscie | 536871040 | 0 | LVCMOS18 | 169

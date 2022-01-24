@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_val_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Shift_register</arg>&gt;.
+</msg>
+
+</messages>
+

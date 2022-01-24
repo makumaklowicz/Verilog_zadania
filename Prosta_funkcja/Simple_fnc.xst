@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/miste/Desktop/Verilog/Prosta_funkcja/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/miste/Desktop/Verilog/Prosta_funkcja/xst"
+elaborate
+-ifn Simple_fnc.prj
+-ifmt mixed

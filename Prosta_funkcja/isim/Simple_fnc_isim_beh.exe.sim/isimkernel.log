@@ -1,0 +1,29 @@
+Command line:
+   Simple_fnc_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55012
+
+Sun Dec 19 20:15:44 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5149.94 Meg
+
+ Total Signals          : 18
+ Total Nets             : 18
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 7
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 98
+Total Line Count : 15
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 4678.08 Meg
+
+Sun Dec 19 21:09:00 2021
+

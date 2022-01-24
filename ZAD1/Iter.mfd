@@ -1,0 +1,23 @@
+MDF Database:  version 1.0
+MDF_INFO | Iter | XC2C256-6-TQ144
+MACROCELL | 9 | 5 | y_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | x3  | x4  | x2  | x5  | x1  | x6  | x7  | x0
+INPUTP | 8 | 10 | 3 | 7 | 5 | 4 | 8 | 12 | 1
+EQ | 6 | 
+   y = x3 & !x4 & !x2
+	# !x3 & x4 & !x5
+	# !x3 & x2 & !x1
+	# !x4 & x5 & !x6
+	# !x5 & x6 & !x7
+	# !x2 & x1 & !x0;	// (6 pt, 8 inp)
+
+PIN | x0 | 64 | 16 | LVCMOS18 | 1 | 1 | 9 | 5
+PIN | x1 | 64 | 16 | LVCMOS18 | 4 | 1 | 9 | 5
+PIN | x2 | 64 | 16 | LVCMOS18 | 7 | 1 | 9 | 5
+PIN | x3 | 64 | 16 | LVCMOS18 | 10 | 1 | 9 | 5
+PIN | x4 | 64 | 16 | LVCMOS18 | 3 | 1 | 9 | 5
+PIN | x5 | 64 | 16 | LVCMOS18 | 5 | 1 | 9 | 5
+PIN | x6 | 64 | 16 | LVCMOS18 | 8 | 1 | 9 | 5
+PIN | x7 | 64 | 16 | LVCMOS18 | 12 | 1 | 9 | 5
+PIN | y | 536871040 | 0 | LVCMOS18 | 160

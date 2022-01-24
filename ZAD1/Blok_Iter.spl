@@ -1,0 +1,11 @@
+[Inputs]
+x
+P_in
+Q_in
+[Outputs]
+P_out
+Q_out
+[BiDir]
+[ATTRIBUTES]
+VeriModel Blok_Iter
+

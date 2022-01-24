@@ -1,0 +1,45 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+clock S:PIN39
+functional S:PIN124
+wejscie S:PIN2
+wyjscie<0> S:PIN119
+wyjscie<1> S:PIN117
+wyjscie<2> S:PIN115
+wyjscie<3> S:PIN113
+wyjscie<4> S:PIN104
+wyjscie<5> S:PIN102
+wyjscie<6> S:PIN100
+wyjscie<7> S:PIN97
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_15 mem_val<1> mem_val<2>
+
+
+
+
+
+
+
+PARTITION FB9_2 wyjscie<3>
+PARTITION FB9_6 wyjscie<2>
+PARTITION FB9_13 wyjscie<1>
+PARTITION FB9_15 wyjscie<0>
+
+PARTITION FB10_6 wyjscie<4>
+PARTITION FB10_14 wyjscie<5>
+
+PARTITION FB11_11 mem_val<0>
+
+PARTITION FB12_2 wyjscie<6>
+PARTITION FB12_12 wyjscie<7>
+
+
+
+
+
+

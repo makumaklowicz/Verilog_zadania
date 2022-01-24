@@ -1,0 +1,393 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | Counter | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | clock_II | Counter_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clock | 519 | PI | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | clock_II/UIM | 545 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | clock_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_II | Counter_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 520 | PI | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | start_II | Counter_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | start | 521 | PI | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | values<0>_MC | Counter_COPY_0_COPY_0 | 1024 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR12__ctinst/4 | 546 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR12__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | values<0>_MC.Q | 547 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | values<0>_MC.SI | values<0>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | values<0>_MC.D1 | 524 | ? | 0 | 0 | values<0>_MC | NULL | NULL | values<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | values<0>_MC.D2 | 523 | ? | 0 | 0 | values<0>_MC | NULL | NULL | values<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | values<0>_MC.UIM | IV_FALSE | start_II/UIM
+SPPTERM | 4 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+SPPTERM | 5 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_FALSE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+
+SRFF_INSTANCE | values<0>_MC.REG | values<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | values<0>_MC.D | 522 | ? | 0 | 0 | values<0>_MC | NULL | NULL | values<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR12__ctinst/4 | 546 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR12__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | values<0>_MC.Q | 525 | ? | 0 | 0 | values<0>_MC | NULL | NULL | values<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | values<1>_MC | Counter_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR12__ctinst/4 | 546 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR12__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | values<1>_MC.Q | 549 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | values<1>_MC.SI | values<1>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | values<1>_MC.D1 | 530 | ? | 0 | 0 | values<1>_MC | NULL | NULL | values<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | values<1>_MC.D2 | 529 | ? | 0 | 0 | values<1>_MC | NULL | NULL | values<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | start_II/UIM | IV_TRUE | values<1>_MC.UIM
+SPPTERM | 5 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+SPPTERM | 5 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+
+SRFF_INSTANCE | values<1>_MC.REG | values<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | values<1>_MC.D | 528 | ? | 0 | 0 | values<1>_MC | NULL | NULL | values<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR12__ctinst/4 | 546 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR12__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | values<1>_MC.Q | 531 | ? | 0 | 0 | values<1>_MC | NULL | NULL | values<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | values<3>_MC | Counter_COPY_0_COPY_0 | 1024 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR10__ctinst/4 | 544 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR10__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | values<3>_MC.Q | 553 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | values<3>_MC.SI | values<3>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | values<3>_MC.D1 | 535 | ? | 0 | 0 | values<3>_MC | NULL | NULL | values<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | values<3>_MC.D2 | 534 | ? | 0 | 0 | values<3>_MC | NULL | NULL | values<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | start_II/UIM | IV_TRUE | values<3>_MC.UIM
+SPPTERM | 6 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_TRUE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+SPPTERM | 6 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_TRUE | values<3>_MC.UIM | IV_FALSE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+
+SRFF_INSTANCE | values<3>_MC.REG | values<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | values<3>_MC.D | 533 | ? | 0 | 0 | values<3>_MC | NULL | NULL | values<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR10__ctinst/4 | 544 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR10__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | values<3>_MC.Q | 536 | ? | 0 | 0 | values<3>_MC | NULL | NULL | values<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | values<2>_MC | Counter_COPY_0_COPY_0 | 5120 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR10__ctinst/4 | 544 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR10__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | values<2>_MC.Q | 551 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | values<2>_MC.SI | values<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | start_II/UIM | 527 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | start_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<3>_MC.UIM | 537 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<2>_MC.UIM | 542 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 543 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<0>_MC.UIM | 526 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | values<1>_MC.UIM | 532 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | values<2>_MC.D1 | 540 | ? | 0 | 0 | values<2>_MC | NULL | NULL | values<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | values<2>_MC.D2 | 539 | ? | 0 | 0 | values<2>_MC | NULL | NULL | values<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | start_II/UIM | IV_TRUE | values<3>_MC.UIM | IV_TRUE | values<2>_MC.UIM
+SPPTERM | 3 | IV_TRUE | start_II/UIM | IV_TRUE | values<2>_MC.UIM | IV_TRUE | reset_II/UIM
+SPPTERM | 5 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+
+SRFF_INSTANCE | values<2>_MC.REG | values<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | values<2>_MC.D | 538 | ? | 0 | 0 | values<2>_MC | NULL | NULL | values<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR10__ctinst/4 | 544 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR10__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | values<2>_MC.Q | 541 | ? | 0 | 0 | values<2>_MC | NULL | NULL | values<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | values<0> | Counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | values<0>_MC.Q | 547 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<0>_MC.Q | values<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | values<0> | 548 | PO | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | values<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | values<1> | Counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | values<1>_MC.Q | 549 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<1>_MC.Q | values<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | values<1> | 550 | PO | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | values<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | values<2> | Counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | values<2>_MC.Q | 551 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<2>_MC.Q | values<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | values<2> | 552 | PO | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | values<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | values<3> | Counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | values<3>_MC.Q | 553 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | values<3>_MC.Q | values<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | values<3> | 554 | PO | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | values<3> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR2_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 12 | NULL | 0 | clock_II | 1 | NULL | 0 | 39 | 50176
+
+FB_INSTANCE | FOOBAR7_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | values<3>_MC | 1 | NULL | 0 | values<3> | 1 | 104 | 49152
+FBPIN | 14 | values<2>_MC | 1 | NULL | 0 | values<2> | 1 | 102 | 49152
+
+FB_INSTANCE | FOOBAR11_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 11 | NULL | 0 | start_II | 1 | NULL | 0 | 124 | 50176
+
+FB_INSTANCE | FOOBAR12_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | values<1>_MC | 1 | NULL | 0 | values<1> | 1 | 100 | 49152
+FBPIN | 12 | values<0>_MC | 1 | NULL | 0 | values<0> | 1 | 97 | 49152
+FBPIN | 15 | NULL | 0 | reset_II | 1 | NULL | 0 | 94 | 49152
+
+FB_INSTANCE | FOOBAR13_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | Counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clock_II/UIM | 545 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | clock_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR10__ctinst/4 | 544 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR10__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | Counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clock_II/UIM | 545 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | clock_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR12__ctinst/4 | 546 | ? | 0 | 0 | Counter_COPY_0_COPY_0 | NULL | NULL | FOOBAR12__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | Counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR10_ | 7
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | start_II/UIM | IV_TRUE | values<3>_MC.UIM | IV_TRUE | values<2>_MC.UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | start_II/UIM | IV_TRUE | values<2>_MC.UIM | IV_TRUE | reset_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 5 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 2 | IV_FALSE | start_II/UIM | IV_TRUE | values<3>_MC.UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 6 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_TRUE | values<3>_MC.UIM | IV_FALSE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 6 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_TRUE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+
+PLA | FOOBAR12_ | 7
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_TRUE | values<0>_MC.UIM | IV_FALSE | start_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 5 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_FALSE | values<2>_MC.UIM | IV_FALSE | reset_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 2 | IV_FALSE | start_II/UIM | IV_TRUE | values<1>_MC.UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | clock_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 5 | IV_FALSE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_TRUE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_TRUE | values<0>_MC.UIM | IV_TRUE | start_II/UIM | IV_FALSE | values<1>_MC.UIM | IV_FALSE | values<3>_MC.UIM | IV_FALSE | reset_II/UIM
+
+BUSINFO | VALUES<3:0> | 4 | 0 | 1 | values<0> | 3 | values<1> | 2 | values<2> | 1 | values<3> | 0
+
+IOSTD | LVCMOS18
+clock | LVCMOS18
+reset | LVCMOS18
+start | LVCMOS18
+values<0> | LVCMOS18
+values<1> | LVCMOS18
+values<2> | LVCMOS18
+values<3> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR10_ | 0 | start | 124 | 4 | values<1>_MC.UIM | NULL | 5 | clock | 39 | 8 | values<0>_MC.UIM | NULL | 14 | values<2>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR10_ | 16 | reset | 94 | 21 | values<3>_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR10_ | 120 | -1 | -1 | -1 | 361 | 61 | -1 | -1 | 371 | -1 | -1 | -1 | -1 | -1 | 341 | -1 | 136 | -1 | -1 | -1 | -1 | 333 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 0 | start | 124 | 4 | values<1>_MC.UIM | NULL | 5 | clock | 39 | 8 | values<0>_MC.UIM | NULL | 14 | values<2>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 16 | reset | 94 | 21 | values<3>_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR12_ | 120 | -1 | -1 | -1 | 361 | 61 | -1 | -1 | 371 | -1 | -1 | -1 | -1 | -1 | 341 | -1 | 136 | -1 | -1 | -1 | -1 | 333 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Blok_Iter.v -lang verilog -prj ZAD1 -o Blok_Iter.spl -module Blok_Iter -template E:/Programy/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr Blok_Iter.spl C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Blok_Iter.sym 
+vhdtdtfi -lib work C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Blok_Iter.v -lang verilog -prj ZAD1 -o Blok_Iter.spl -module Blok_Iter -template E:/Programy/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr Blok_Iter.spl C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Blok_Iter.sym 

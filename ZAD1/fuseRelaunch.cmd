@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Users/miste/Desktop/Nowy folder/Verilog zadania/ZadaniaVerilog/ZAD1/Blok_Iter_isim_beh.exe" -prj "C:/Users/miste/Desktop/Nowy folder/Verilog zadania/ZadaniaVerilog/ZAD1/Blok_Iter_beh.prj" "work.Blok_Iter" "work.glbl" 

@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.xst" -ofn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Iter.ucf -p xc2c256-TQ144-6 Iter.ngc Iter.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Iter.ngd 
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Iter.ngd 
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Iter.ngd 
+tsim -intstyle ise Iter Iter.nga 
+xst -intstyle ise -ifn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.xst" -ofn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Iter.ucf -p xc2c256-TQ144-6 Iter.ngc Iter.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Iter.ngd 
+tsim -intstyle ise Iter Iter.nga 
+hprep6 -s IEEE1149 -i Iter 
+xst -intstyle ise -ifn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.xst" -ofn "C:/Users/miste/Desktop/ZadaniaVerilog/ZAD1/Iter.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Iter.ucf -p xc2c256-TQ144-6 Iter.ngc Iter.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Iter.ngd 
+tsim -intstyle ise Iter Iter.nga 
+hprep6 -s IEEE1149 -i Iter 

@@ -1,0 +1,67 @@
+MDF Database:  version 1.0
+MDF_INFO | Counter | XC2C256-6-TQ144
+MACROCELL | 11 | 11 | values<0>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 4 | 9 | 13 | 9 | 5 | 11 | 1 | 11 | 11
+INPUTS | 6 | values<0>  | start  | values<3>  | reset  | values<1>  | values<2>
+INPUTMC | 4 | 11 | 11 | 9 | 5 | 11 | 1 | 9 | 13
+INPUTP | 2 | 190 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   values<0> := values<0> & !start
+	# !values<0> & start & !values<3> & !reset
+	# !values<0> & start & !values<1> & !values<2> & 
+	!reset;	// (3 pt, 6 inp)
+    values<0>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 1 | values<1>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 4 | 9 | 13 | 9 | 5 | 11 | 1 | 11 | 11
+INPUTS | 5 | start  | values<1>  | values<0>  | values<3>  | reset
+INPUTMC | 3 | 11 | 1 | 11 | 11 | 9 | 5
+INPUTP | 2 | 190 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   values<1> := !start & values<1>
+	# values<0> & start & !values<1> & !values<3> & 
+	!reset
+	# !values<0> & start & values<1> & !values<3> & 
+	!reset;	// (3 pt, 5 inp)
+    values<1>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 5 | values<3>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 4 | 9 | 13 | 9 | 5 | 11 | 1 | 11 | 11
+INPUTS | 6 | start  | values<3>  | values<0>  | values<1>  | values<2>  | reset
+INPUTMC | 4 | 9 | 5 | 11 | 11 | 11 | 1 | 9 | 13
+INPUTP | 2 | 190 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   values<3> := !start & values<3>
+	# values<0> & start & values<1> & !values<3> & 
+	values<2> & !reset
+	# !values<0> & start & !values<1> & values<3> & 
+	!values<2> & !reset;	// (3 pt, 6 inp)
+    values<3>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 13 | values<2>_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 3 | 9 | 13 | 9 | 5 | 11 | 11
+INPUTS | 6 | start  | values<3>  | values<2>  | reset  | values<0>  | values<1>
+INPUTMC | 4 | 9 | 5 | 9 | 13 | 11 | 11 | 11 | 1
+INPUTP | 2 | 190 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   values<2>.T := start & values<3> & values<2>
+	# start & values<2> & reset
+	# values<0> & start & values<1> & !values<3> & 
+	!reset;	// (3 pt, 6 inp)
+    values<2>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+PIN | clock | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | reset | 64 | 16 | LVCMOS18 | 142 | 4 | 9 | 13 | 9 | 5 | 11 | 1 | 11 | 11
+PIN | start | 64 | 16 | LVCMOS18 | 190 | 4 | 9 | 13 | 9 | 5 | 11 | 1 | 11 | 11
+PIN | values<0> | 536871040 | 0 | LVCMOS18 | 145
+PIN | values<1> | 536871040 | 0 | LVCMOS18 | 152
+PIN | values<2> | 536871040 | 0 | LVCMOS18 | 156
+PIN | values<3> | 536871040 | 0 | LVCMOS18 | 160
